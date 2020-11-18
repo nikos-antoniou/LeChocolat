@@ -41,13 +41,16 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header align-items-center">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Le Chocolat</h1>
                     <p>We combine experience with creativity to create innovative tastes based on classic chocolate
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col-12 col-sm-3">
                     <img src="images/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 m-auto">
+                    <a role="button" class="btn btn-warning btn-sm" href="#reserveForm">Reserve your baskets</a>
                 </div>
             </div>
         </div>
@@ -116,7 +119,7 @@
         </div>
         <div class="row  row-content align-items-center justify-content-center">
             <div class="col-sm-8 col-12">
-                <div class="card">
+                <div id="reserveForm" class="card">
                     <h3 class="card-header bg-warning text-white">Reserve your baskets</h3>
                     <div class="card-body">
                         <form>
@@ -154,25 +157,25 @@
                                         <label class="form-check-label" for="inlineRadio3">6</label>
                                     </div>
                                 </div>
-                            </div><br>
+                            </div>
 
                             <div class="form-group row">
-                            
-                            <lable class="col-12 col-sm-3">Date and Time</lable>
-                            <div class="input-group col-12 col-sm-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="date"><i class="fa fa-calendar"
-                                            aria-hidden="true"></i></span>
+
+                                <lable class="col-12 col-sm-3">Date and Time</lable>
+                                <div class="input-group col-12 col-sm-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="date"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="date" class="form-control" name="myDate">
                                 </div>
-                                <input type="date" class="form-control" name="myDate">
-                            </div>
-                            <div class="input-group col-12 col-sm-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text fa fa-clock-o"></span>
+                                <div class="input-group col-12 col-sm-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text fa fa-clock-o"></span>
+                                    </div>
+                                    <input type="time" class="form-control" name="myTime">
                                 </div>
-                                <input type="time" class="form-control" name="myTime">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
                             </div>
                         </form>
                     </div>
